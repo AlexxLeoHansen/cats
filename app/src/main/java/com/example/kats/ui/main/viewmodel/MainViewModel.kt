@@ -16,7 +16,7 @@ import java.time.Instant
 import java.util.*
 import javax.inject.Inject
 
-class MainViewModel @Inject constructor (val userRepository: UserRepository) : ViewModel() {
+class MainViewModel @Inject constructor (private val userRepository: UserRepository) : ViewModel() {
 
     fun isUserRegistered(userName: String, password: String): Maybe<User> {
         return userRepository.createUser(userName,password)
