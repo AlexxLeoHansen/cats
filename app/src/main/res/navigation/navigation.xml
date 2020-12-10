@@ -6,7 +6,7 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/catalogFragment"
-        android:name="com.example.kats.catalog.CatalogFragment"
+        android:name="com.example.movies.catalog.CatalogFragment"
         android:label="catalog_fragment"
         tools:layout="@layout/catalog_fragment" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.kats.ui.main.fragment.MainFragment"
+        android:name="com.example.movies.ui.main.fragment.MainFragment"
         android:label="main_fragment"
         tools:layout="@layout/main_fragment" >
         <action
